@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tecnolologias y frameworks</title>
+<style>
+  body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f5f1f1;
+}
+
+.topnav {
+background-color: #333;
+padding: 15px;
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.links {
+display: flex;
+gap: 5px;
+    }
+
+    .links a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border: 2px solid black; 
+    }
+
+    .links a:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    ul {
+    margin: 15px 0;
+    padding-left: 25px;
+    color: #333;
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+.footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <div class="links">
+      <a href="Index.html">Fundamentos del desarrollo web</a>
+  <a href="">Tecnologías y frameworks</a>
+  <a href="Optimización y rendimiento.html">Optimización y rendimiento</a>
+<a href="Seguridad.html">Seguridad en el desarrollo web</a>
+<a href="Diseño y experiencia de usuario.html">Diseño y experiencia de usuario</a>
+<a href="Tendencias y futuro del desarrollo web.html">Tendencias y futuro del desarrollo web</a>
+
+</div>
+</div>
+<div class="content">
+<h2>Seguridad en el desarrollo web</h2>
+<p>
+La seguridad en el desarrollo web es un componente esencial para garantizar la protección de datos sensibles, la integridad
+de las aplicaciones y la confianza de los usuarios. En un mundo digital donde las amenazas cibernéticas crecen constantemente, 
+un sitio inseguro puede convertirse en un blanco fácil para ataques que comprometen información personal y corporativa. Uno de 
+los principios básicos es la validación y sanitización de entradas. Todo dato que provenga del usuario debe ser verificado antes 
+de procesarse, evitando que código malicioso se ejecute en el servidor o en el navegador. Esto incluye formularios, parámetros en 
+URLs y cualquier interacción con bases de datos. La gestión de contraseñas y credenciales es otro aspecto crítico. Las contraseñas 
+nunca deben almacenarse en texto plano, sino encriptadas con algoritmos seguros como bcrypt o Argon2. Además, implementar autenticación 
+multifactor (MFA) añade una capa adicional de protección contra accesos no autorizados. La seguridad en las sesiones también es fundamental. 
+Se deben usar identificadores únicos y seguros, establecer tiempos de expiración y proteger las cookies con atributos como HttpOnly y Secure. 
+Esto reduce el riesgo de secuestro de sesiones y accesos indebidos.
+</p>
+<p>
+El uso de HTTPS mediante certificados SSL/TLS es obligatorio en cualquier sitio moderno. Esto asegura que la comunicación entre el usuario y el
+servidor esté cifrada, protegiendo contraseñas, datos personales y transacciones financieras. Los encabezados de seguridad HTTP como Content-Security-Policy, 
+X-Frame-Options y Strict-Transport-Security ayudan a prevenir ataques comunes, bloqueando la ejecución de scripts no autorizados y evitando que el sitio sea 
+incrustado en páginas maliciosas. La gestión de permisos y roles es otra práctica esencial. Aplicar el principio de mínimos privilegios garantiza que cada usuario 
+y proceso tenga solo los permisos estrictamente necesarios, reduciendo el riesgo de abuso o acceso indebido. Las actualizaciones constantes de frameworks, librerías 
+y servidores son vitales. Muchas vulnerabilidades se corrigen en nuevas versiones, por lo que mantener el software actualizado es una defensa básica contra ataques conocidos.
+Las auditorías de seguridad y pruebas de penetración permiten detectar vulnerabilidades antes de que sean explotadas. Estas pruebas simulan ataques reales para evaluar la resistencia 
+del sistema y ayudan a implementar medidas correctivas de manera proactiva.
+</p>
+<p>
+La seguridad en APIs y servicios externos es un aspecto que muchas veces se pasa por alto. Cuando un sitio web consume datos de terceros, es fundamental validar las respuestas y proteger las
+claves de acceso mediante almacenamiento seguro. El uso de tokens de acceso con expiración y protocolos como OAuth 2.0 ayuda a reducir riesgos de exposición. La protección contra ataques de 
+fuerza bruta es otra medida esencial. Implementar límites de intentos de inicio de sesión, captchas y bloqueos temporales evita que los atacantes prueben múltiples combinaciones de contraseñas 
+hasta encontrar la correcta. Además, el monitoreo de patrones sospechosos en los intentos de acceso puede alertar sobre posibles ataques automatizados. La seguridad en el lado del cliente también 
+debe considerarse. Aunque gran parte de la protección ocurre en el servidor, el navegador puede ser un punto vulnerable. Aplicar políticas de seguridad como Content-Security-Policy y evitar el uso 
+de scripts inseguros protege al usuario contra ataques de inyección y robo de información. La seguridad en el lado del cliente también debe considerarse. Aunque gran parte de la protección ocurre en 
+el servidor, el navegador puede ser un punto vulnerable. Aplicar políticas de seguridad como Content-Security-Policy y evitar el uso de scripts inseguros protege al usuario contra ataques de inyección y 
+robo de información. La educación y capacitación de los desarrolladores es clave para mantener un entorno seguro. Muchas vulnerabilidades surgen por desconocimiento o malas prácticas en el código. Capacitar 
+a los equipos en estándares de seguridad, auditorías de código y metodologías seguras de desarrollo (como DevSecOps) garantiza que la seguridad esté integrada desde el inicio del proyecto. Finalmente, la 
+respuesta ante incidentes es un componente vital de la seguridad web. Ningún sistema es 100% invulnerable, por lo que contar con planes de contingencia, copias de seguridad periódicas y protocolos de recuperación 
+rápida permite minimizar el impacto de un ataque. La capacidad de detectar, responder y aprender de los incidentes fortalece la resiliencia del sitio frente a futuras amenazas.
+</p>
+<h2>Buenas Practicas de Seguridad</h2>
+
+<h4>Algunos de estos pueden ser:</h4>
+<ul>
+<li>Uso de HTTPS: cifrado de todas las comunicaciones entre cliente y servidor.</li>
+<li>Validación de entradas: nunca confiar en los datos del usuario sin verificarlos.</li>
+<li>Encriptación de contraseñas: usar algoritmos seguros como bcrypt o Argon2.</li>
+<li>Autenticación multifactor (MFA): añadir una capa extra de seguridad.</li>
+<li>Gestión de sesiones: cookies seguras, expiración adecuada y protección contra secuestro.</li>
+<li>Encabezados de seguridad HTTP: aplicar políticas como Content-Security-Policy.</li>
+<li>Actualizaciones constantes: mantener frameworks, librerías y servidores en sus últimas versiones.</li>
+<li>Auditorías y pruebas de penetración: detectar vulnerabilidades antes de que sean explotadas.</li>
+<li>Firewalls de aplicaciones web (WAF): filtrar tráfico malicioso y prevenir ataques.</li>
+<li>Monitoreo en tiempo real: detectar comportamientos sospechosos y responder rápidamente.</li>
+</ul>
+
+</div>
+<img src="imagen1111.png" alt="Mi foto" style="margin:20px;">
+<img src="imagen2222.jpg" alt="Mi foto" style="margin:20px;">
+
+  <div class="footer">
+    © 2026 JAFV FIRMA
+  </div>
+
+</body>
+</html>
+
